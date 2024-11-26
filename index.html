@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Lab 5 Volunteer Form</title>
+  </head>
+  <body>
+    <h1>Volunteer Form</h1>
+    <fieldset>
+      <legend>My Info</legend>
+      <form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" name="my_info">
+        <p><label>First name: <input type="text" maxlength="150" size="150" name="first_name_field"></label></p>
+        <p><label>Last name: <input type="text" maxlength="150" size="150" name="last_name_field"></label></p>
+        <p><label>Phone: <input type="text" maxlength="150" size="150" name="phone_field"></label></p>
+        <p><label>Email: <input type="text" maxlength="150" size="150" name="email_field"></label></p>
+        <p>Gender:</p> 
+        <label>
+          Male <input type="radio" name="gender_field" value="male"> 
+          Female <input type="radio" name="gender_field" value="female"> 
+        </label>
+        <br>
+        <label for="options">Age:</label>
+        <select id="options" name="age_field">
+          <option value="option1">under 18</option>
+          <option value="option2">over 18</option>
+        </select>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>My availability:</legend>
+      <h3>Days Available:</h3>
+      <form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" name="available_field[]">
+        <label>
+          <input type="checkbox" name="monday" value="yes"> Monday
+        </label><br>
+        <label>
+          <input type="checkbox" name="tuesday" value="yes"> Tuesday
+        </label><br>
+        <label>
+          <input type="checkbox" name="wednesday" value="yes"> Wednesday
+        </label><br>
+        <label>
+          <input type="checkbox" name="thurthday" value="yes"> Thurthday
+        </label><br>
+        <label>
+          <input type="checkbox" name="friday" value="yes"> Friday
+        </label><br>
+        <label>
+          <input type="checkbox" name="saturday" value="yes"> Saturday
+        </label><br>
+        <label>
+          <input type="checkbox" name="sunday" value="yes"> Sunday
+        </label>
+        <h3>Comments:</h3> 
+        <textarea name="comments_field" cols="20" rows="3"></textarea>
+        <input type="hidden" name="hidden_field" value="By Shanti">
+      </form>
+    </fieldset>
+    <input type="submit" value="Submit Query">
+  </body>
+</html>
